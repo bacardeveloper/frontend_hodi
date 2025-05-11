@@ -1,8 +1,9 @@
-const express = require('express');
+const express = require("express");
 const app = express();
 const PORT = 3000;
 
-app.get('/frontend', (req, res) => {
+app.get("/frontend", (req, res) => {
+  res.set("Content-Type", "text/html; charset=UTF-8");
   res.send(`
     <!DOCTYPE html>
     <html lang="fr">
